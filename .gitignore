@@ -1,27 +1,10 @@
 # Environment variables
 .env
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
 
 # Virtual Environment
 venv/
-env/
-ENV/
+
 
 # Vector store files
 vectorstore/
-
-# IDE
-.vscode/
-.idea/
-
-# Misc
-.DS_Store
