@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-openai_key = st.secrets.get('OPENAI_API_KEY', os.getenv('OPENAI_API_KEY'))
+openai_key = st.secrets['OPENAI_API_KEY']
 
 if not openai_key:
     st.error('Please set the OPENAI_API_KEY in your Streamlit secrets or .env file')
