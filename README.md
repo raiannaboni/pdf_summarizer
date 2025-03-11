@@ -22,7 +22,7 @@ An interactive chat application that allows users to have conversations with the
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/raiannaboni/pdf_summarizer
 ```
 
 2. Install the required dependencies:
@@ -30,10 +30,17 @@ git clone <your-repository-url>
 pip install -r requirements.txt
 ```
 
-3. Create a `.env` file in the project root and add your API keys:
+## Environment Setup
+
+1. Copy the `.env` file to create your own `.env` file:
+```bash
+cp .env.example .env
 ```
-OPENAI_API_KEY=your_openai_api_key
-HF_API_KEY=your_huggingface_api_key
+
+2. Add your API keys to the `.env` file:
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
+HF_API_KEY=your_huggingface_api_key_here
 ```
 
 ## Running the Application
