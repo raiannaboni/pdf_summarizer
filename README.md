@@ -1,6 +1,7 @@
 # PDF Chat Assistant 📚
 
-An interactive chat application that allows users to have conversations with their PDF documents. Built with Streamlit, LangChain, and OpenAI's GPT model.
+An interactive chat application that allows users to have conversations with their PDF documents. Built with Streamlit, LangChain, and OpenAI's GPT and DeepSeek models.
+You can access it here: https://huggingface.co/spaces/raiannaboni/pdf_summarizer
 
 ## Features
 
@@ -16,7 +17,7 @@ An interactive chat application that allows users to have conversations with the
 
 - Python 3.8 or higher
 - OpenAI API key
-- Hugging Face API key (for embeddings)
+- DeepSeek API key
 
 ## Installation
 
@@ -40,7 +41,7 @@ cp .env.example .env
 2. Add your API keys to the `.env` file:
 ```bash
 OPENAI_API_KEY=your_openai_api_key_here
-HF_API_KEY=your_huggingface_api_key_here
+DEEPSEEK_API_KEY=your_deepseek_api_key_here
 ```
 
 ## Running the Application
@@ -65,7 +66,7 @@ The application will be available at `http://localhost:8501`
 - **Document Processing**: Uses RecursiveCharacterTextSplitter for efficient text chunking
 - **Embeddings**: Utilizes BAAI/bge-m3 model from Hugging Face for document embeddings
 - **Vector Store**: FAISS for efficient similarity search
-- **LLM**: OpenAI's GPT model for generating responses
+- **LLM**: OpenAI's GPT and DeepSeek models for generating responses
 - **RAG Implementation**: Uses LangChain's retrieval chain with history-aware retriever
 
 ## Contributing
@@ -80,4 +81,5 @@ Built with:
 - [Streamlit](https://streamlit.io/)
 - [LangChain](https://python.langchain.com/)
 - [OpenAI](https://openai.com/)
+- [DeepSeek](https://platform.deepseek.com/)
 - [FAISS](https://github.com/facebookresearch/faiss)
