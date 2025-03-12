@@ -20,11 +20,11 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-openai_key = os.getenv('OPENAI_API_KEY')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
-if not openai_key:
-    st.error('Please set the OPENAI_API_KEY in your Streamlit secrets or .env file')
-    st.stop()
+# if not OPENAI_API_KEY:
+#     st.error('Please set the OPENAI_API_KEY in your Streamlit secrets or .env file')
+#     st.stop()
 
 # Create a temporary directory for vector store
 VECTOR_STORE_DIR = tempfile.mkdtemp()
@@ -100,7 +100,7 @@ def model_openai(model='gpt-4o-mini', temperature=0.1):
     llm = ChatOpenAI(
         model=model,
         temperature=temperature,
-        api_key=openai_key
+        api_key=OPENAI_API_KEY
     )
 
     return llm
