@@ -21,8 +21,8 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-OPENAI_API_KEY = st.secrets.get('OPENAI_API_KEY')
-DEEPSEEK_API_KEY = st.secrets.get('DEEPSEEK_API_KEY')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+DEEPSEEK_API_KEY = os.getenv('DEEPSEEK_API_KEY')
 
 # Create a temporary directory for vector store
 VECTOR_STORE_DIR = tempfile.mkdtemp()
