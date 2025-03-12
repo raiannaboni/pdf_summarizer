@@ -20,11 +20,9 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+# OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
 
-# if not OPENAI_API_KEY:
-#     st.error('Please set the OPENAI_API_KEY in your Streamlit secrets or .env file')
-#     st.stop()
 
 # Create a temporary directory for vector store
 VECTOR_STORE_DIR = tempfile.mkdtemp()
@@ -36,6 +34,9 @@ st.set_page_config(
     layout='wide',
     initial_sidebar_state='expanded'
 )
+# st.write(
+#     'Has environment variables been set:',
+#     os.environ['OPENAI_API_KEY'] == st.secrets['OPENAI_API_KEY'])
 
 # Custom CSS
 st.markdown("""
