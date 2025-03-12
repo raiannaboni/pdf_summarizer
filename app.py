@@ -34,6 +34,9 @@ st.set_page_config(
     layout='wide',
     initial_sidebar_state='expanded'
 )
+st.write("Chave carregada?", "OPENAI_API_KEY" in st.secrets)
+st.write("Valor da chave:", st.secrets.get("OPENAI_API_KEY", "Não encontrado"))
+
 # st.write(
 #     'Has environment variables been set:',
 #     os.environ['OPENAI_API_KEY'] == st.secrets['OPENAI_API_KEY'])
