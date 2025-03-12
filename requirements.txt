@@ -3,6 +3,7 @@ langchain==0.3.20
 langchain-core==0.3.43
 langchain-community==0.3.19
 langchain-openai==0.3.8
+langchain_deepseek==0.1.2
 langchain_huggingface==0.1.2
 langchain-text-splitters==0.3.6
 python-dotenv==1.0.1
