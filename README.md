@@ -1,7 +1,7 @@
 # PDF Chat Assistant 📚
 
 An interactive chat application that allows users to have conversations with their PDF documents. Built with Streamlit, LangChain, and OpenAI's GPT and DeepSeek models.
-You can access it here: https://huggingface.co/spaces/raiannaboni/pdf_summarizer
+- You can access it here: [PDF_SUMMARIZER](https://huggingface.co/spaces/raiannaboni/pdf_summarizer)
 
 ## Features
 
