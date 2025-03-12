@@ -243,13 +243,10 @@ if user_query is not None and user_query != '' and uploads is not None:
 # Add footer
 st.markdown('---')
 st.markdown(
-    '<div style="text-align: center">Made with ❤️ by Raianna Boni</div>',
+    '<div style="text-align: center">Made with ❤️ | Using LangChain and Streamlit</div>',
     unsafe_allow_html=True
 )
-st.markdown(
-    '<div style="text-align: center">Using LangChain and Streamlit</div>',
-    unsafe_allow_html=True
-)
+
 
 
 
